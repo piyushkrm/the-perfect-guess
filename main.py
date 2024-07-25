@@ -18,12 +18,13 @@ user = -1
 guesses = 0
 
 while user != computer :
-    guesses += 1
-
     user = int(input("Guess the number : "))
 
     if user > computer:
         print("Please lower number enter !")
-    else : 
+    elif user < computer : 
         print("Please enter higher number !")
+
+    guesses += 1
+
 print(f"You have guessed the number {computer} correctly in {guesses} attempts")
