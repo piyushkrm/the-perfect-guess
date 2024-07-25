@@ -22,9 +22,10 @@ while user != computer :
 
     if user > computer:
         print("Please lower number enter !")
+        guesses += 1
+        
     elif user < computer : 
         print("Please enter higher number !")
-
-    guesses += 1
+        guesses += 1
 
 print(f"You have guessed the number {computer} correctly in {guesses} attempts")
